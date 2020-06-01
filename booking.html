@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>index</title>
+    </head>
+    <body>
+        <div class="head">
+        <img src="https://drive.google.com/uc?id=1qj2BThFslKUdXNl2U8NJmrejxv5O42jU" alt="logo" style="width: 10%" class="rotate90" id="logo1">
+        <img src="https://drive.google.com/uc?id=1KumH1Y4oJ_da7GoJt2IIoNhGUSJXAUy_" alt="logo" style="width: 10%" id="logo2">
+        <h1 class="header1">All 4 Paws</h1>
+        </div>
+        <br>
+        <div class="nav">
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="booking.html">Make a booking</a></li>
+            <li><a href="prices.html">Price List</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+        </div>
+        <div class="form">
+        <p>Please read the<a href="terms.html" target="popup" onclick="window.open('terms.html', 'popup', 'width=600, height=600'); return false"> terms and conditions</a> carefully before proceeding</p>
+        <form action="sendemail.php" method="post">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br>
+        <label for="number">Contact Number:</label>
+        <input type="text" id="number" name="number"><br>
+        <label for="area">Select your area:</label><br>
+        <p>*Please note if your area is not part of the list please select other and state below*</p>
+        <select style="width: 10%"id="area" name="area">
+        <option>Antrim</option>
+        <option>Randalstown</option>
+        <option>Ballymena</option>
+        <option>Craigavon</option>
+          </select>
+            <br>
+        <label for="area">Other area:</label>
+        <input type="text" id="area" name="area"><br>
+        <label for="pets">Select number of pets:</label><br>
+        <p>*Please note if more than 3 please message us to book*</p>
+        <select style="width: 10%"id="pets" name="pets">
+        <option>1 pet</option>
+        <option>2 pets</option>
+        <option>3 pets</option>
+          </select>
+            <br>
+  <label for="datemin">Beginning of booking:</label>
+  <input type="date" id="datemin" name="datemin" min="2000-01-02"><br>
+  <label for="datemax">End of booking (date of return):</label>
+  <input type="date" id="datemax" name="datemax" max="2020-12-31"><br><br>
+            <br>
+        <input type="submit" value="Submit">
+        </form>
+            </div>
+        <br>
+         <footer id="footer">
+        <div id="social">
+        <a href="https://www.facebook.com/Petservice01/" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/all4paws01/?hl=en" target="_blank" class="fa fa-instagram"></a>
+        </div>
+        <div id="footer-below">All 4 Paws &copy;</div>   
+    </footer>
+        <script src="jsfile.js" type="text/javascript"></script>
+    </body>
+</html>
